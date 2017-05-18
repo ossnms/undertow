@@ -44,8 +44,8 @@
     </licenses>
 
     <scm>
-        <connection>scm:git://github.com/ossnms/undertow.git</connection>
-        <developerConnection>scm:git://github.com/ossnms/undertow.git</developerConnection>
+        <connection>scm:git:https://github.com/ossnms/undertow.git</connection>
+        <developerConnection>scm:git:https://github.com/ossnms/undertow.git</developerConnection>
         <url>https://github.com/ossnms/undertow</url>
     </scm>
 
@@ -96,6 +96,9 @@
         <version.org.mortbay.jetty.alpn>${version.org.mortbay.jetty.alpn.jdk7}</version.org.mortbay.jetty.alpn>
         <version.org.eclipse.jetty.alpn>1.0.0</version.org.eclipse.jetty.alpn>
         <alpn-boot-string></alpn-boot-string>
+
+        <nexus-host>http://nexus-lis.intra.coriant.com/</nexus-host>
+        <project.scm.id>ossnms</project.scm.id>
     </properties>
 
     <modules>
@@ -517,5 +520,13 @@
             </build>
         </profile>
     </profiles>
+
+    <distributionManagement>
+        <repository>
+            <id>tnms-releases-repository</id>
+            <name>TNMS - releases repository</name>
+            <url>${nexus-host}/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
 
 </project>
