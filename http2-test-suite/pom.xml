@@ -23,12 +23,12 @@
     <parent>
         <groupId>io.undertow</groupId>
         <artifactId>undertow-parent</artifactId>
-        <version>1.2.12.Final-ossnms-001</version>
+        <version>1.2.12.Final-ossnms-002-SNAPSHOT</version>
     </parent>
 
     <groupId>io.undertow</groupId>
     <artifactId>undertow-http2-test-suite</artifactId>
-    <version>1.2.12.Final-ossnms-001</version>
+    <version>1.2.12.Final-ossnms-002-SNAPSHOT</version>
 
     <name>Undertow HTTP2 test suite</name>
 
